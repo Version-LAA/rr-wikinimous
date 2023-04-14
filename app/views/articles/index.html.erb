@@ -1,0 +1,6 @@
+<h1>Wiki NavBar</h1>
+
+<%@articles.each do |article|%>
+  <h3><%=link_to(article.title,articles_path)%></h3>
+  <p><%=article.content%></p>
+<%end%>
