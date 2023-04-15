@@ -5,9 +5,11 @@ class ArticlesController < ApplicationController
   end
 
   def create
+
   end
 
   def new
+    @article = Article.new
   end
 
   def edit

@@ -1,0 +1,11 @@
+<h1>Create a New Post</h1>
+
+<%= form_with model: @article do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :content %>
+  <%= f.text_field :content %>
+  <%= f.label "Long Description" %>
+  <%= f.text_field :long_description %>
+  <%= f.submit %>
+<% end %>
